@@ -1,11 +1,9 @@
 pipeline{
-    agent {
-        label 'Linux'
-    }
+    agent any
     stages{
         stage ('git checkout'){
             steps{
-                git credentialsId: 'github', url: 'https://github.com/sudheer535/-premium-app.git'
+                git credentialsId: 'NewGitHub', url: 'https://github.com/sudheer535/Dell.git'
             }
         }
     }
